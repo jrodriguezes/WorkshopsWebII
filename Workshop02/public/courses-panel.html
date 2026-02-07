@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses panel</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <form id="courseForm" action="">
+        <label>Id</label>
+        <input type="text" id="id" readonly/>
+        <label>Nombre del curso</label>
+        <input type="text" id="name"/>
+        <label>Cantidad de creditos</label>
+        <input type="number" id="credits"/>
+
+        <button type="submit">Guardar</button>
+        <button type="button" id="btnUpdate">Modificar</button>
+        <button type="button" id="btnDelete">Eliminar</button>
+    </form>
+
+    <table id="coursesTable">
+        <thead>
+            <tr class="tableBorder">
+                <th class="tableBorder">Id</th>
+                <th class="tableBorder">Nombre del curso</th>
+                <th class="tableBorder">Creditos</th>
+                <th class="tableBorder">Opcion</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <script src="js/courses.js"></script>
+</body>
+
+</html>
