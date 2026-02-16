@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de cursos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button id="professorButton">Profesores</button>
+
+    <form id="courseForm">
+        <input type="text" id="mongooseId">
+        <label for="">Codigo de curso</label>
+        <input type="text" id="courseCodeInput">
+        <label for="">Nombre</label>
+        <input type="text" id="courseNameInput">
+        <label for="">Descripcion</label>
+        <input type="text" id="descriptionInput">
+        <label for="">Id del profesor</label>
+        <select id="dropdownProfessorId">
+        </select>
+
+        <button type="submit">Agregar curso</button>
+        <button type="button" id="btnUpdate">Modificar</button>
+        <button type="button" id="btnDelete">Eliminar</button>
+    </form>
+
+    <table id="courseTable">
+        <thead>
+            <tr>
+                <th>MongoId</th>
+                <th>Codigo de curso</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Id del profesor</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody id="courseBody">
+            <tr></tr>
+        </tbody>
+    </table>
+
+    <script src="js/courses.js"></script>
+</body>
+</html>

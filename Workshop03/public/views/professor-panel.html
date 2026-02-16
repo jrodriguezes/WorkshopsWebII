@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de profesor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button id="coursesButton">Cursos</button>
+    <form id="professorForm">
+        <input type="text" id="mongooseId">
+        <label for="">Cedula</label>
+        <input type="text" id="idNumberInput">
+        <label for="">Nombre</label>
+        <input type="text" id="professorNameInput">
+        <label for="">Apellido</label>
+        <input type="text" id="lastNameInput">
+        <label for="">Edad</label>
+        <input type="number" id="ageInput">
+
+        <button type="submit">Agregar profesor</button>
+        <button type="button" id="btnUpdate">Modificar</button>
+        <button type="button" id="btnDelete">Eliminar</button>
+    </form>
+
+    <table id="professorTable">
+        <thead>
+            <tr>
+                <th>MongoId</th>
+                <th>Cedula</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody id="professorBody">
+            <tr></tr>
+        </tbody>
+    </table>
+
+    <script src="js/professors.js"></script>
+</body>
+</html>
