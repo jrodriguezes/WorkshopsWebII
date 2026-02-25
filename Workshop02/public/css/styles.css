@@ -1,0 +1,13 @@
+#coursesTable {
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    height: auto;
+    width: auto;
+}
+
+.tableBorder {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+}
